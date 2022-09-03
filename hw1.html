@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function cal(){
+           var in1 = parseInt(document.getElementById("input1").value)
+           var in2 = parseInt(document.getElementById("input2").value)
+           var ans1 = in1+in2 
+           document.getElementById("ans").value=ans1
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <input type="text" id="input1" size="10"> +
+        <input type="text" id="input2" size="10"> =
+        <input type="text" id="ans" size="10">
+        <input type="button" id="bb" value="Go Go" onclick="cal()">
+    </form>
+</body>
+</html>
