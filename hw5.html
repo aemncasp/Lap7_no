@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        table, th ,td{
+          border: 1px solid black;  
+        }
+        
+    </style>
+    <script>
+        function table(){
+            var nname = document.getElementById("name").value
+            var naddress = document.getElementById("address").value
+            var nphone = document.getElementById("phone").value
+
+            var tr = document.createElement("tr")
+            var table = document.getElementById("table")
+            table.appendChild(tr)
+
+            var td = document.createElement("td")
+            td.innerHTML = nname
+            var table = document.getElementById("table")
+            table.appendChild(td)
+
+            var td = document.createElement("td")
+            td.innerHTML = naddress
+            var table = document.getElementById("table")
+            table.appendChild(td)
+
+            var td = document.createElement("td")
+            td.innerHTML = nphone
+            var table = document.getElementById("table")
+            table.appendChild(td)
+        }
+    </script>
+</head>
+<body>
+    <form>
+        ชื่อลูกค้า : <input type="text " id="name">
+        <p>ที่อยู่ : <input type="text" id="address"> </p>
+        <p>โทรศัพท์ : <input type="text" id="phone"> </p>
+        <p><input type="button" value="เพิ่ม" id="ans" onclick="table()"> </p>
+    </form>
+    <table id="table">
+        <tr id="tr-table">
+            <th>ชื่อลูกค้า</th>
+            <th> ที่อยู่ </th>
+            <th>โทรศัพท์</th>
+        </tr>
+    </table>
+        
+    
+</body>
+</html>
